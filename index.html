@@ -577,7 +577,7 @@
       windowTitle.textContent = "First app";
       windowBody.innerHTML =
         "<div style='padding:12px; font-family:sans-serif;'>" +
-        "<h1>Welcome to 8os II</h1>" +
+        "<h1>Welcome to 8os II - warm theme</h1>" +
         "<strong>this is the newest version of 8os</strong>" +
         "<p>Tutorial:</p>" +
         "<ul>" +
@@ -603,7 +603,7 @@
         "<li><a href='/8osI' target='_blank'>version I (old version)</a></li>" +
         "</ul>" +
         "<p>This version:</p>" +
-        "<ul><li>8os II --- second version</li></ul>" +
+        "<ul><li>8os II --- second version (modded/warm theme)</li></ul>" +
         "</div>";
       showWindow();
     }
@@ -986,6 +986,36 @@ write("INFO  System running normally");
           if (value.toLowerCase() === "cloack") { //normal command
             cloack();
             write("tab changed from '8os II' to 'Google Classroom' and changed favicon");
+            return;
+          }
+          if (value.toLowerCase() === "info") { //normal command
+          write("")
+          write("")
+            write("Welcome to 8os II - warm theme");
+            write("")
+            write("this is the newest version of 8os");
+            write("")
+            write("Tutorial:");
+            write("On the top right of the window you will see two buttons.");
+            write("The red button with an x symbol closes the window.");
+            write("The button next to it toggles fullscreen.");
+            write("When in fullscreen you can't move the window.");
+            write("Press it again to return and move it again.");
+            write("To resize the window drag the resize handle on the bottom right.");
+            write("")
+            write("About:");
+            write("8os is a project that focuses on unblocked games while also being a lightweight 'real' OS that runs entirely in your browser.");
+            write("Made for fun, not paid. Best support: share the site and check out the main site.");
+            write("")
+            write("Info:");
+            write("Made by 0800");
+            write("Inspired by gOS");
+            write("")
+            write("Other:");
+            write("version I (old version)");
+            write("")
+            write("This version:");
+            write("8os II --- second version (modded/warm theme) ");
             return;
           }
           const match = value.match(/^([a-zA-Z_$][\w$]*)\(\)$/);
