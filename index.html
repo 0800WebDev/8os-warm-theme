@@ -983,7 +983,11 @@ write("INFO  System running normally");
             output.textContent = "";
             return;
           }
-
+          if (value.toLowerCase() === "cloack") { //normal command
+            cloack();
+            write("tab changed from '8os II' to 'Google Classroom' and changed favicon");
+            return;
+          }
           const match = value.match(/^([a-zA-Z_$][\w$]*)\(\)$/);
           if (match) {
             const fnName = match[1];
@@ -1029,6 +1033,11 @@ function clearScreen() {
     function os() {
       console.log("error: you typed os()");
     }
+    function  cloack() {
+    document.title = 'Google Classroom';
+        document.getElementById('favicon').href = 'https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://staticin.pages.dev/settings&size=16';
+        }
+      
   </script>
 
 
